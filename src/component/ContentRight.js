@@ -12,7 +12,7 @@ import footballerTablet from '../image/footballer-tablet.svg'
 
 const ContentRight = ({ info, key }) => {
     const theme = useTheme();
-    const matchesmd = useMediaQuery(theme.breakpoints.down(1200));
+    const matchesmd = useMediaQuery(theme.breakpoints.down(1300));
     const renderClassname = (id) => {
         switch (id) {
             case "02":
@@ -38,7 +38,9 @@ const ContentRight = ({ info, key }) => {
                 </Grid>
             </div>
         })}
-        <img src={matchesmd ? footballerTablet : footballerDasktop} alt={matchesmd ? 'footballerTablet' : 'footballerDasktop'} className='image-footballer' />
+        <div className='relative'>
+            <img src={matchesmd ? footballerTablet : footballerDasktop} alt={matchesmd ? 'footballerTablet' : 'footballerDasktop'} className='image-footballer' />
+        </div>
     </div>
 }
 

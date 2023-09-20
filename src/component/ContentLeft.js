@@ -12,7 +12,7 @@ import basketballTablet from '../image/basketball-tablet.svg'
 
 const ContentLeft = ({ info, key }) => {
     const theme = useTheme();
-    const matchesmd = useMediaQuery(theme.breakpoints.down(1200));
+    const matchesmd = useMediaQuery(theme.breakpoints.down(1300));
     const renderClassname = (id) => {
         switch (id) {
             case "02":

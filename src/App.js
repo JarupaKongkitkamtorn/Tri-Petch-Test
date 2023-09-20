@@ -12,7 +12,7 @@ import { informationATHLETS, informationPLAYERS } from './const/information'
 function App() {
   const theme = useTheme();
   const matchessm = useMediaQuery(theme.breakpoints.down('sm'));
-  const matchesmd = useMediaQuery(theme.breakpoints.down(1200));
+  const matchesmd = useMediaQuery(theme.breakpoints.down(1300));
   return (
     <div className='app'>
       {matchessm ?
